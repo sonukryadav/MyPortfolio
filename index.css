@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -142,10 +143,21 @@ box-shadow: 1px 1px 10px rgb(194, 194, 194);
 
 /* google translate */
 #google_translate_element{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
+/* flowerpot */
+.flowerpot{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid yellow; */
+    width: 100%;
+    margin-top: 22px;
+}
 
+#flow1{
+    width: 50px;
+}
 
 /*-----------rightBody content---------*/
 
@@ -197,7 +209,7 @@ background: linear-gradient(to right, #000000, #434343);
 }
 
 #abo1{
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline;
     letter-spacing: 4px;
@@ -214,17 +226,20 @@ background: linear-gradient(to right, #000000, #434343);
 .abo3{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
+gap: 25px 25px;
 color: white;
 border: 1px dotted red;
+margin: auto;
 width: 80%;
 margin-top: 25px;
 background: linear-gradient(to right, #114357, #f29492); 
+padding: 25px;
 }
 
 .abo4{
     font-size: 20px;
-    width: 50%;
-    border: 1px dotted green;
+    width: 100%;
+    /* border: 1px dotted green; */
 }
 
 #abo5{
@@ -236,15 +251,299 @@ background: linear-gradient(to right, #114357, #f29492);
 }
 
 #abo7{
+    font-size: 25px;
     font-weight: 600;
+    color: #061a2afb;
 }
 
 #abo8{
-    
+    font-size: 22px;
+}
+
+
+/* ---------- skills -----------*/
+.skill1{
+padding: 30px;
+width: 100%;
+}
+
+#ski1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.ski2{
+margin-top: 30px;
+}
+
+.ski2i{
+    margin-bottom: 20px;
+}
+
+#ski3{
+font-size: 25px;
+font-weight: 600;
+color: white;
+}
+
+.ski4{
+width: 100%;
+background-color: #ddd;
+}
+
+.ski5{
+text-align: right;
+padding: 5px 5px;
+color: white;
+font-weight: 600;
+font-size: 25px;
+}
+
+.html{
+    width: 90%; 
+    background-color: #04AA6D;
+}
+
+.css{
+    width: 80%; 
+    background-color: #2196F3;
+}
+
+.js{
+    width: 70%; 
+    background-color: #f44336;
+}
+
+.java{
+    width: 72%; 
+    background-color: #808080;
+}
+
+.dsa{
+    width: 71%; 
+    background-color: #ff7b00;
+}
+
+.communication{
+width: 85%;
+background:#c31432;
+}
+/* ---resume--- */
+
+.resume1{
+padding: 30px;
+width: 100%;
+}
+
+#res1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+#res2{
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 73%;
+    height: 600px;
+    z-index: 1;
+}
+
+#res3{
+    background-image: linear-gradient(to right, #0B486B 0%, #F56217  51%, #0B486B  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#res3:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* -----project------ */
+
+.project1{
+padding: 30px;
+width: 100%;
+}
+
+#pro1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.pro2{
+    border: 2px dotted gold;
+    width: 100%;
+    height: 500px;
+}
+
+/* ---------Blog----------------- */
+
+.blog1{
+padding: 30px;
+width: 100%;
+}
+
+#blo1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.blo2{
+    border: 2px dotted rgb(0, 113, 170);
+    width: 100%;
+    height: 500px;
+}
+
+
+/* -----contact------- */
+.contact1{
+padding: 30px;
+width: 100%;
+}
+
+#con0{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+#contxt1{
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+#contxt2{
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 25px;
+}
+
+#pen1{
+    color: #08a4ff;
+    vertical-align: bottom;
+}
+
+
+.con1{
+display: flex;
+}
+
+/* map */
+.map1{
+width: 40%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px;
+}
+                        
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 830px;
+}
+
+.gmap_iframe {
+    height: 830px !important;
+}
+
+
+.con2{
+width: 60%;
+}
+
+#con3{
+    display: block;
+    margin: auto;
+    width:630px;
+    height:1000px;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+/* copyright */
+
+.copyright1{
+    width: 100%;
+    /* border: 1px solid deepskyblue; */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#cr1{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+#cr2{
+    vertical-align:middle;
+    font-size: 19px;
+}
+
+#cr3{
+    color: #0092e7;
 }
 
 
 /*--XXX------rightBody content---XXX---*/
+
+
+
+
+
+
+
+/* -----------skill bar css------------------- */
+
+/* ---XXX-----skill bar css---------XXX------- */
+
 
 
 
@@ -396,3 +695,5 @@ background: linear-gradient(to right, #114357, #f29492);
         }
 
 /* ------xxx-------bg animation-----xxx------- */
+
+
