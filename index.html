@@ -36,6 +36,10 @@
 
         <div class="sidebar">
 
+            <div>
+                <span id="closeMenu" onclick="sideClose()" class="material-symbols-outlined">close </span>
+            </div>
+
             <div class="sidebar-content">
 
 
@@ -194,18 +198,23 @@
 
 
 
-        <div class= "rightBody">
+        <div  class= "rightBody">
+
+            <!-- bar icon -->
+            <div>
+                <span id="menu" onclick="sideOpen()" class="material-symbols-outlined">menu</span>
+            </div>
 
             <!-- first box -->
             <div class="topB">
 
+                <div class="text1">
+                    <h1>I am a <span class="type"></span></h1>
+                </div>
+
                 <div class="imgdiv1">
                     <img id="imgs2" src="./assests/sonu-tree-bg-removed-blackAndWhite.png" alt="sonu's pic">
                     <h1 id="text0">Sonu Kumar Yadav</h1>
-                </div>
-
-                <div class="text1">
-                    <h1>I am a <span class="type"></span></h1>
                 </div>
 
             </div>
@@ -386,7 +395,7 @@
                 <h1 id="res1">Resume</h1>
 
                 <div>
-                    <iframe id="res2" src="./assests/Sonu's resume.pdf" frameBorder="0"></iframe>
+                    <img id="res2" src="./assests/Sonu's resume-img.jpg" alt="resume">
                 </div>
 
                 <div><a href="./assests/Sonu's resume.pdf" download><button id="res3">Download Resume</button></a></div>
@@ -439,21 +448,19 @@
 
                 <div class="con1">
 
-                    <div class="map1">
-
-                        <div class="mapouter">
-                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
-                                    marginwidth="0"
-                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Delhi, saket&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                                    href="https://piratebay-proxys.com/">Piratebay</a></div>
-                        </div>
-
-                    </div>
-
                     <div class="con2">
                         <iframe id="con3"
                             src="https://docs.google.com/forms/d/e/1FAIpQLSc11VHb9gFSvoXgTjAHKiAIiszH8qV2Lr5nBn7_9EuoKFXdcA/viewform?embedded=true"
                             frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+
+                    <div class="map1">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                    marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Delhi, saket&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://piratebay-proxys.com/">Piratebay</a></div>
+                        </div>
                     </div>
 
                 </div>
@@ -573,3 +580,7 @@
 <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+
+
+    <!-- fadeIn and fadeOut jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -1,3 +1,57 @@
+window.sideOpen = sideOpen;
+window.sideClose = sideClose;
+
+function sideOpen() {
+
+    
+    let side = document.querySelector(".sidebar");
+    let sideClose = document.querySelector("#closeMenu");
+    side.style.backgroundColor = "rgba(0, 0, 0, 0.98)";
+    side.style.border = "1px solid white";
+    // side.style.width = "310px";
+
+    let set1 = setInterval(sw1, 25);
+    let w = 0;
+
+    function sw1() {
+        if (w >= 310) {
+            clearInterval(set1);
+            w = 0;
+        }
+        else {
+            side.style.width = w + "px";
+            w+=20;
+        }
+        
+    }
+
+    side.style.zIndex = "4";
+    sideClose.style.display = "block";
+}
+
+function sideClose() { 
+    let side = document.querySelector(".sidebar");
+    // side.style.width = "0px";
+    side.style.border = "0px";
+
+    let set2 = setInterval(sw2, 10);
+    let w2 = 310;
+
+    function sw2() {
+        if (w2 == 0) {
+            clearInterval(set2);
+            side.style.border = "0px";
+        }
+        else {
+            side.style.width = w2 + "px";
+            w2 -= 20;
+        }
+    }
+}
+
+
+
+
 // on scroll change the color of side bar icon
 window.onscroll = function () { scroll1() };
 
@@ -7,22 +61,22 @@ function scroll1() {
     // console.log(h2);
 
     let topbS = document.querySelector(".topB").offsetTop - 60;
-    console.log(topbS);
+    // console.log(topbS);
 
     let aboutS = document.querySelector(".about1").offsetTop - 60;
-    console.log(aboutS);
+    // console.log(aboutS);
 
     let resumeS = document.querySelector(".resume1").offsetTop - 60;
-    console.log(resumeS);
+    // console.log(resumeS);
 
     let projectS = document.querySelector(".project1").offsetTop - 60;
-    console.log(projectS);
+    // console.log(projectS);
 
     let blogS = document.querySelector(".blog1").offsetTop - 60;
-    console.log(blogS);
+    // console.log(blogS);
 
     let contactS = document.querySelector(".contact1").offsetTop - 60;
-    console.log(contactS);
+    // console.log(contactS);
 
     let th1 = aboutS - topbS;
     let th2 = resumeS - aboutS;
