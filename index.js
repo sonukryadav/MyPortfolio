@@ -102,9 +102,6 @@ function scroll1() {
     let th3 = projectS - resumeS;
     let th4 = blogS - projectS;
     let th5 = contactS - blogS;
-    
-
-    
 
     // home
     if (h2 < aboutS) {
