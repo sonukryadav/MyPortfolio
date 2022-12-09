@@ -334,32 +334,20 @@ width: 100%;
 }
 
 .ski2{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap:20px 20px;
 }
 
-.ski2i{
-    margin-bottom: 20px;
+/* .ski2 > div {
+    width: 50px;
+    height:50px;;
+} */
+
+#techlogo{
+    width: 100%;
+    height: 150px;
 }
-
-#ski3{
-font-size: 25px;
-font-weight: 600;
-color: white;
-}
-
-.ski4{
-width: 100%;
-background-color: #ddd;
-}
-
-.ski5{
-text-align: right;
-padding: 5px 5px;
-color: white;
-font-weight: 600;
-font-size: 25px;
-}
-
-
 
 
 
