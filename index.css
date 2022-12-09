@@ -347,15 +347,18 @@ gap:20px 20px;
 #techlogo{
     width: 100%;
     height: 150px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    box-shadow: 5px 5px 10px rgb(87, 100, 108);
 }
 
 
 
 /* 3d chart */
 
-.chart{
+#myPlot{
+    display: block;
     width:100%;
-    max-width:600px;
     height:fit-content;
     color:black;
     margin:auto;
@@ -670,6 +673,12 @@ margin-bottom: -0px;
         margin-top: 10px;
     }
 
+    .ski2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px 20px;
+    }
+
 
 
 }
@@ -728,6 +737,12 @@ width: 100%;
 
 .abo3u2 > div>span{
     padding-right: 10px;
+}
+
+.ski2{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap:20px 20px;
 }
 
 }

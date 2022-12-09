@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./sass.scss">
 
     <!-- 3d chart -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <!------ favicons ------->
     <link href="./assests/sonu-tree-bg-blur-color.png" rel="icon">
@@ -337,44 +337,31 @@
                     <div><img id="techlogo" src="./techStackLogo/JSON.png" alt="JSON"/></div>
                     <div><img id="techlogo" src="./techStackLogo/JAVA.png" alt="JAVA"/></div>
                     <div><img id="techlogo" src="./techStackLogo/React js.webp" alt="React"/></div>
-                    <div><img id="techlogo" src="./techStackLogo/redux.png" alt="Redux"/></div>
-                    <div><img id="techlogo" src="./techStackLogo/git logo.png" alt="Git"/></div>
+                    <div><img id="techlogo" src="./techStackLogo/redux.png" alt="Redux" /></div>
+                    <div><img id="techlogo" src="./techStackLogo/git logo1.jpg" alt="Git" /></div>
                     <div><img id="techlogo" src="./techStackLogo/github.png" alt="Github"/></div>
                     <div><img id="techlogo" src="./techStackLogo/material ui logo.png" alt="Material ui"/></div>
                     <div><img id="techlogo" src="./techStackLogo/chakra.png" alt="Chakra ui"/></div>
-                    <!-- <div><img id="techlogo" src="" /></div> -->
+                    <div><img id="techlogo" src="./techStackLogo/bootstrap-logo.png" alt="bootstrap" /></div>
+                    <!-- <div><img id="techlogo" src="" alt="" /></div> -->
                 </div>
 
             </div>
 
             <!-- 3D chart -->
-            <div id="myChart" class="chart">
-            </div>
-            
-            <script>
-                google.charts.load('current', { 'packages': ['corechart'] });
-                google.charts.setOnLoadCallback(drawChart);
-
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable([
-                        ['Contry', 'Mhl'],
-                        ['Italsy', 54.8],
-                        ['France', 48.6],
-                        ['Spain', 44.4],
-                        ['USA', 23.9],
-                        ['Argentina', 14.5]
-                    ]);
-
-                    var options = {
-                        title: 'World Wide Wine Production',
-                        is3D: true
-                    };
-
-                    var chart = new google.visualization.PieChart(document.getElementById('myChart'));
-                    chart.draw(data, options);
-                }
-            </script>
-
+           <div id="myPlot"></div>
+        
+        <script>
+            var xArray = ["HTML", "CSS", "SASS", "JS(ES6)", "AJAX","JSON","JAVA", "React js", "Redux", "Git","Github", "Material UI", "Chakra UI", "Bootstrap"];
+            var yArray = [55, 49, 44, 24, 15, 80, 70, 60, 70, 55, 70, 55, 80, 75];
+            var data = [{
+                x: xArray,
+                y: yArray,
+                type: "bar"
+            }];
+            var layout = { title: "Tech Stack" };
+            Plotly.newPlot("myPlot", data, layout);
+        </script>
 
             <!-- resume -->
             <div class="resume1">
