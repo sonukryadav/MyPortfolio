@@ -320,8 +320,10 @@ font-weight: 700;
 
 /* ---------- skills -----------*/
 .skill1{
+position: relative;
 padding: 30px;
 width: 100%;
+z-index: 5;
 }
 
 #ski1{
@@ -336,32 +338,74 @@ width: 100%;
 .ski2{
 display: grid;
 grid-template-columns: repeat(5, 1fr);
-gap:20px 20px;
+gap:20px 0px;
 }
 
-/* .ski2 > div {
-    width: 50px;
-    height:50px;;
-} */
-
-#techlogo{
-    width: 100%;
-    height: 150px;
+.ski2>div{
+    /* display: block; */
     border-radius: 10px;
     border: 1px solid lightblue;
     box-shadow: 5px 5px 10px rgb(87, 100, 108);
+    color: white;
+    margin: auto;
+    padding:15px 15px;
+    text-align: center;
+    background-color: #032d46bd;
+    /* width: 200px; */
 }
 
+.ski2>div:hover{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#techlogo{
+    width: 100px;
+    height: 80px;
+}
+
+#lname{
+margin-top: 10px;
+}
+
+#lname:hover{
+}
+
+
+#techlogo:hover{
+     animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 
 /* 3d chart */
 
 #myPlot{
     display: block;
-    width:100%;
-    height:fit-content;
-    color:black;
     margin:auto;
+    width: 90%;;
+    margin-top: 25px;
+    box-shadow:1px 1px 15px #0092e7;
+    border-radius: 10px;
+    overflow: hidden;
+    height: fit-content;
+}
+#myPlot:hover{
+    cursor:text;
 }
 
 
@@ -382,14 +426,18 @@ width: 100%;
     margin-top: 25px;
 }
 
+.res2p{
+
+}
+
 #res2{
     display: block;
     margin: auto;
-    position: relative;
     width: 50%;
-    min-height: 450px;
+    height: fit-content;
     overflow-x: hidden;
     z-index: 1;
+    border-radius: 10px;
 }
 
 #res3{
@@ -419,11 +467,13 @@ width: 100%;
 }
 
 
-/* -----project------ */
+/* ------------------project----------------- */
 
 .project1{
 padding: 30px;
 width: 100%;
+position: relative;
+z-index: 5;
 }
 
 #pro1{
@@ -438,7 +488,57 @@ width: 100%;
 .pro2{
     border: 2px dotted gold;
     width: 100%;
-    height: 500px;
+    height: fit-content;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.proframe{
+
+}
+
+#iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.procontent{
+    background-color:rgb(26,32,44);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+#procheading{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#proctext{
+margin:20px 5px;
+font-family:monospace
+}
+
+#proccollab{
+font-size: 18px;
+font-weight: 700;
+}
+
+.proctech0{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+margin:20px 5px ;
+gap: 10px 20px;
+}
+
+#proctech{
+background-color: rgb(146, 0, 51);
+padding: 5px 10px;
+border-radius: 20px;
+color: white;
 }
 
 /* ---------Blog----------------- */
