@@ -62,7 +62,7 @@ top: 0;
 height: 100vh;
 /* border: 2px solid green; */
 width: 20%;
-overflow-y: auto;
+overflow-y: hidden;
 overflow-x: hidden;
 }
 
@@ -207,7 +207,8 @@ box-shadow: 1px 1px 10px rgb(194, 194, 194);
 
 /* google translate */
 #google_translate_element{
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 46px;
 }
 
 /* flowerpot */
@@ -216,8 +217,8 @@ box-shadow: 1px 1px 10px rgb(194, 194, 194);
     grid-template-columns: repeat(3, 1fr);
     /* border: 1px solid yellow; */
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: -27px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 #flow1{
@@ -767,7 +768,7 @@ width: 100%;
 display: flex;
 background: linear-gradient(to right, #1a2980, #248988a6);
 border: 1px solid brown;
-height: fit-content;
+height: 830px;
 overflow: hidden;
 padding: 1px;
 }
