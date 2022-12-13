@@ -15,7 +15,7 @@ function sideOpen() {
 
     signal1 = 1;
 
-    let set1 = setInterval(sw1, 25);
+    let set1 = setInterval(sw1, 40);
     let w = 0;
 
     function sw1() {
@@ -24,9 +24,9 @@ function sideOpen() {
         }
         else {
             side.style.width = w + "px";
-            w+=20;
+            w+=10;
         }
-        
+
     }
     side.style.zIndex = "4";
     sideClose.style.display = "block";
@@ -56,12 +56,12 @@ function sideClose() {
 window.onclick = function () {clickAnywhere()};
 
 function clickAnywhere() {
-    if (window.innerWidth <= 1000 && signal1 == 1) {
-            sideClose();
-        console.log(signal1);
-        signal1 = 0;
-        
-    }
+    // if (window.innerWidth <= 1000 && signal1 == 1) {
+    //         sideClose();
+    //     console.log(signal1);
+    //     signal1 = 0;
+    // }
+    sideClose();
 }
 
 $('#menu').click(function (event) {
