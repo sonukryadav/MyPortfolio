@@ -56,12 +56,10 @@ function sideClose() {
 window.onclick = function () {clickAnywhere()};
 
 function clickAnywhere() {
-    // if (window.innerWidth <= 1000 && signal1 == 1) {
-    //         sideClose();
-    //     console.log(signal1);
-    //     signal1 = 0;
-    // }
-    sideClose();
+    if (window.innerWidth <= 1000 && signal1 == 1) {
+            sideClose();
+        // console.log(signal1);
+    }
 }
 
 $('#menu').click(function (event) {
