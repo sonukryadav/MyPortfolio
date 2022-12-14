@@ -1,7 +1,7 @@
 window.sideOpen = sideOpen;
 window.sideClose = sideClose;
 
-window.onresize = function () { location.reload()};
+// window.onresize = function () { location.reload()};
 
 let signal1 = 0;
 
@@ -15,7 +15,7 @@ function sideOpen() {
 
     signal1 = 1;
 
-    let set1 = setInterval(sw1, 40);
+    let set1 = setInterval(sw1, 10);
     let w = 0;
 
     function sw1() {
@@ -33,11 +33,11 @@ function sideOpen() {
 
 }
 
-function sideClose() { 
+function sideClose() {
     let side = document.querySelector(".sidebar");
     side.style.border = "0px";
 
-    let set2 = setInterval(sw2, 0);
+    let set2 = setInterval(sw2, 1);
     let w2 = 310;
 
     function sw2() {
@@ -53,7 +53,7 @@ function sideClose() {
 }
 
 
-window.onclick = function () {clickAnywhere()};
+// window.onclick = function () {clickAnywhere()};
 
 function clickAnywhere() {
     if (window.innerWidth <= 1000 && signal1 == 1) {
