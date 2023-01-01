@@ -62,9 +62,9 @@ function clickAnywhere() {
     }
 }
 
-$('#menu').click(function (event) {
-    event.stopPropagation();
-});
+// $('#menu').click(function (event) {
+//     event.stopPropagation();
+// });
 
 
 
@@ -76,6 +76,7 @@ window.onscroll = function () { scroll1() };
 function scroll1() {
     let h2 = window.pageYOffset;
     // console.log(h2);
+    console.log("ioi")
 
     let topbS = document.querySelector(".topB").offsetTop - 60;
     // console.log(topbS);
